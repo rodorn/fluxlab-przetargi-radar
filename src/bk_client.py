@@ -52,6 +52,7 @@ def _headers() -> dict[str, str]:
     h = {
         "User-Agent": config.USER_AGENT,
         "Accept": "application/json",
+        "Content-type": "application/json",
         "Referer": f"{config.BASE_URL}/ogloszenia",
     }
     if config.BK_TOKEN:
@@ -117,14 +118,27 @@ def normalize(raw: dict) -> Announcement:
         raw,
         "terminOfert",
         "submissionDeadline",
+        "submission_deadline",
         "deadline",
         "offerSubmissionDeadline",
         default="",
     )
     pub = _first(
-        raw, "publicationDate", "announcementPublicationDate", "publishDate", default=""
+        raw,
+        "publicationDate",
+        "publication_date",
+        "announcementPublicationDate",
+        "publishDate",
+        default="",
     )
-    place = _first(raw, "fulfillmentPlace", "miejsceRealizacji", "place", default="")
+    place = _first(
+        raw,
+        "fulfillmentPlace",
+        "fulfillment_place",
+        "miejsceRealizacji",
+        "place",
+        default="",
+    )
     if isinstance(place, list):
         place = ", ".join(str(p) for p in place)
     url = f"{config.BASE_URL}/ogloszenia/{aid}" if aid else config.BASE_URL
@@ -150,7 +164,14 @@ def _unwrap_list(payload: Any) -> list[dict]:
     if isinstance(payload, list):
         return [x for x in payload if isinstance(x, dict)]
     if isinstance(payload, dict):
-        for key in ("data", "content", "items", "results", "announcements"):
+        for key in (
+            "advertisements",
+            "data",
+            "content",
+            "items",
+            "results",
+            "announcements",
+        ):
             v = payload.get(key)
             if isinstance(v, list):
                 return [x for x in v if isinstance(x, dict)]
@@ -174,8 +195,9 @@ def fetch_live(
         params = {
             "page": page,
             "limit": limit,
-            "sort": sort,
-            "status": "PUBLISHED",
+            "status[0]": "PUBLISHED",
+            "category": "Usługa",
+            "subcategory": "Usługi IT",
         }
         resp = session.get(
             config.BASE_URL + config.SEARCH_PATH,
@@ -222,5 +244,9 @@ def get_announcements(
     for raw in raw_rows:
         ann = normalize(raw)
         ann.source = mode
+        if mode == "live" and not ann.category:
+            # kategoria filtrowana po stronie API (Usluga / Uslugi IT)
+            ann.category = "Usługa"
+            ann.subcategory = "Usługi IT"
         anns.append(ann)
     return anns, mode
