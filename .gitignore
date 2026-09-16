@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+radar.sqlite3
+out/digest_*
+out/probe_*
+out/sample_run_*
+.env

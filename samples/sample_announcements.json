@@ -1,0 +1,125 @@
+{
+  "_uwaga": "PRZYKLAD - dane fikcyjne o strukturze zgodnej z /api/announcements/search Bazy Konkurencyjnosci. Sluza do dzialania narzedzia end-to-end gdy live API wymaga tokena. NIE sa prawdziwymi ogloszeniami.",
+  "data": [
+    {
+      "id": "2026-100001",
+      "calyNumer": "2026-9999-100001",
+      "title": "Zapytanie ofertowe na wykonanie strony internetowej wraz z systemem CMS",
+      "advertiser": { "name": "Stowarzyszenie Rozwoju Lokalnego (PRZYKLAD)" },
+      "category": "Uslugi IT",
+      "subcategory": "Strony internetowe",
+      "budget": 18000,
+      "terminOfert": "2026-09-30T15:00:00",
+      "announcementPublicationDate": "2026-09-16T09:00:00",
+      "fulfillmentPlace": "woj. mazowieckie"
+    },
+    {
+      "id": "2026-100002",
+      "calyNumer": "2026-9999-100002",
+      "title": "Integracja systemu sprzedazowego z platforma e-commerce oraz automatyzacja procesow",
+      "advertiser": { "name": "MikroFirma Handlowa Sp. z o.o. (PRZYKLAD)" },
+      "category": "Oprogramowanie i uslugi IT",
+      "subcategory": "Integracje",
+      "budget": 24000,
+      "terminOfert": "2026-10-02T12:00:00",
+      "announcementPublicationDate": "2026-09-16T10:30:00",
+      "fulfillmentPlace": "zdalnie"
+    },
+    {
+      "id": "2026-100003",
+      "calyNumer": "2026-9999-100003",
+      "title": "Budowa portalu informacyjnego z baza danych beneficjentow",
+      "advertiser": { "name": "Fundacja Cyfrowa Wies (PRZYKLAD)" },
+      "category": "Uslugi informatyczne",
+      "subcategory": "Portale",
+      "budget": 42000,
+      "terminOfert": "2026-10-10T10:00:00",
+      "announcementPublicationDate": "2026-09-15T14:00:00",
+      "fulfillmentPlace": "woj. lubelskie"
+    },
+    {
+      "id": "2026-100004",
+      "calyNumer": "2026-9999-100004",
+      "title": "Wdrozenie systemu klasy ERP - wymagane referencje z co najmniej 3 projektow",
+      "advertiser": { "name": "Zaklad Produkcyjny META (PRZYKLAD)" },
+      "category": "Oprogramowanie",
+      "subcategory": "Systemy ERP",
+      "budget": 350000,
+      "terminOfert": "2026-10-20T09:00:00",
+      "announcementPublicationDate": "2026-09-16T08:00:00",
+      "fulfillmentPlace": "woj. slaskie"
+    },
+    {
+      "id": "2026-100005",
+      "calyNumer": "2026-9999-100005",
+      "title": "Konfiguracja analityki internetowej GA4 oraz raportowanie konwersji",
+      "advertiser": { "name": "Sklep Rowerowy VELO (PRZYKLAD)" },
+      "category": "Uslugi IT",
+      "subcategory": "Analityka",
+      "budget": 6000,
+      "terminOfert": "2026-09-26T16:00:00",
+      "announcementPublicationDate": "2026-09-16T11:15:00",
+      "fulfillmentPlace": "zdalnie"
+    },
+    {
+      "id": "2026-100006",
+      "calyNumer": "2026-9999-100006",
+      "title": "Dostawa mebli biurowych do sali konferencyjnej",
+      "advertiser": { "name": "Centrum Szkolen NOVA (PRZYKLAD)" },
+      "category": "Dostawy",
+      "subcategory": "Meble",
+      "budget": 15000,
+      "terminOfert": "2026-09-29T12:00:00",
+      "announcementPublicationDate": "2026-09-16T07:45:00",
+      "fulfillmentPlace": "woj. wielkopolskie"
+    },
+    {
+      "id": "2026-100007",
+      "calyNumer": "2026-9999-100007",
+      "title": "Aplikacja webowa do rezerwacji terminow dla przychodni",
+      "advertiser": { "name": "Przychodnia MEDIVITA (PRZYKLAD)" },
+      "category": "Uslugi IT",
+      "subcategory": "Aplikacje webowe",
+      "budget": 28000,
+      "terminOfert": "2026-10-05T15:00:00",
+      "announcementPublicationDate": "2026-09-15T16:20:00",
+      "fulfillmentPlace": "woj. malopolskie"
+    },
+    {
+      "id": "2026-100008",
+      "calyNumer": "2026-9999-100008",
+      "title": "Opracowanie oprogramowania dedykowanego - warunki udzialu: wykaz uslug i poswiadczenia nalezytego wykonania",
+      "advertiser": { "name": "Instytut Badawczy TECHNO (PRZYKLAD)" },
+      "category": "Oprogramowanie",
+      "subcategory": "Systemy dedykowane",
+      "budget": 180000,
+      "terminOfert": "2026-10-18T10:00:00",
+      "announcementPublicationDate": "2026-09-16T09:40:00",
+      "fulfillmentPlace": "woj. dolnoslaskie"
+    },
+    {
+      "id": "2026-100009",
+      "calyNumer": "2026-9999-100009",
+      "title": "Modernizacja strony www i automatyzacja wysylki newslettera",
+      "advertiser": { "name": "Lokalna Grupa Dzialania (PRZYKLAD)" },
+      "category": "Uslugi IT",
+      "subcategory": "Strony internetowe",
+      "budget": null,
+      "terminOfert": "2026-09-28T14:00:00",
+      "announcementPublicationDate": "2026-09-16T12:00:00",
+      "fulfillmentPlace": "woj. podkarpackie"
+    },
+    {
+      "id": "2026-100010",
+      "calyNumer": "2026-9999-100010",
+      "title": "Kampania promocyjna w mediach spolecznosciowych",
+      "advertiser": { "name": "Agroturystyka POD LASEM (PRZYKLAD)" },
+      "category": "Uslugi",
+      "subcategory": "Marketing",
+      "budget": 9000,
+      "terminOfert": "2026-09-27T12:00:00",
+      "announcementPublicationDate": "2026-09-16T13:10:00",
+      "fulfillmentPlace": "zdalnie"
+    }
+  ]
+}
