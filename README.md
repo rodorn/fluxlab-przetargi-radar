@@ -1,5 +1,7 @@
 # FluxLab - Radar zapytan ofertowych IT (Baza Konkurencyjnosci)
 
+> Monitorowanie serwisów i pobieranie danych na zamówienie: [fluxlab.pl/scraping-danych](https://fluxlab.pl/scraping-danych?utm_source=github&utm_campaign=fluxlab-przetargi-radar)
+
 Narzedzie CLI / cron, ktore monitoruje nowe zapytania ofertowe (unijne mikro-przetargi)
 w [Bazie Konkurencyjnosci](https://bazakonkurencyjnosci.funduszeeuropejskie.gov.pl)
 w kategoriach IT i filtruje je pod katem uslug, ktore realizuje FluxLab
